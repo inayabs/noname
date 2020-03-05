@@ -1,0 +1,133 @@
+// Global component styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+// Main page wrapper
+#wrapper {
+  display: flex;
+  #content-wrapper {
+    background-color: $gray-100;
+    width: 100%;
+    overflow-x: hidden;
+    #content {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: fade-out($gray-800, .5);
+  line-height: 46px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+th{
+    background-color: $blue !important;
+    color: $white !important;
+    border:1px solid $blue !important;
+}
+td{
+    border-right-color: $white !important;
+    border-left-color: $white !important;
+}
+
+.border-danger input{
+  border-color: #e74a3b!important;
+}
+
+.horizontal-line-wrapper{
+  background-color: $blue !important;
+  padding: .5rem;color: $white !important;
+}
+.horizontal-line-wrapper h6{
+  margin-bottom: 0;
+}
+.row {
+  padding: 1px;
+}
+.VueTables__search-field,
+.VueTables__limit-field{
+  display: flex;
+}
+.VueTables__search-field label,
+.VueTables__limit-field label{
+  margin-right: 5px;
+}
+.VueTables__highlight b{
+  background-color: $yellow;
+}
+
+.nav-tabs{
+  .nav-link{
+    border-radius: 0;
+    &.active{
+      border-top: 3px solid $blue;;
+      background-color: $white !important;
+      border-bottom: $white !important;
+      padding: 0.335rem 1rem;
+    }
+  }
+  .nav-item{
+    &.show{
+      .nav-link{
+        background-color: $white !important;
+        border-bottom: $white !important;
+      }
+    }
+  }
+}
+
+.v--modal-box{
+  h4{
+    background: $blue;
+    color: $white;
+    font-weight: 700;
+    margin: -10px -14px 10px;
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid $green;
+  }
+
+  .size-modal-content{
+    padding: 0;
+  }
+}

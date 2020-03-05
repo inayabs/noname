@@ -1,0 +1,9 @@
+body{text-align: justify; font-size: 13px;}
+
+.position-relative{position: relative;}
+.no-margin{margin: 0;}
+.no-padding{padding: 0;}
+
+
+.pdf-logo{width: 120px;}
+.pdf-watermark{position: absolute; top: -30px; left: 78%; width: 200px;}

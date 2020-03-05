@@ -1,0 +1,51 @@
+//---------------------//
+  ONLINE LIBRARY SYSTEM
+//---------------------//
+parties
+    - id
+    - fullname
+    - party_type_id
+
+party_types
+    - id
+    - type
+
+persons
+    - id
+    - party_id
+    - firstname
+    - lastname
+    - gender
+    - date_of_birth
+
+contacts
+    - id
+    - party_id
+    - email
+    - second_email
+    - phone
+    - second_phone
+    - address_1
+    - address_2
+    - city
+    - state
+    - postal_code
+    - country
+
+users
+    - id
+    - party_id
+    - role_id
+    - department_id
+    - username
+    - password (Hashed)
+    - remember_token
+    - email_verified_at
+
+roles
+    - id
+    - role
+
+departments
+    - id
+    - department
